@@ -24,3 +24,5 @@ clickMe.addEventListener('click', addSum)
 function addSum() {
   console.log(val + Number(inputVal));
 }
+
+console.log("Thank You");

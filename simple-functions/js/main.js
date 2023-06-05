@@ -1,7 +1,8 @@
 //---Easy
 //create a function that subtracts two numbers and alerts the difference
 function subTwoNums(n1,n2){
-  alert(n1-n2)
+  const val = n1 - n2
+  alert(val)
 }
 
 subTwoNums(10,20)
