@@ -11,10 +11,10 @@ console.log(val);
 let inputVal = document.querySelector('#danceDanceRevolution').value
 
 //add 25 to that number
-inputVal += 25
+// inputVal += 25
 
 //alert that number
-alert(inputVal)
+// alert(inputVal)
 //--- Hard
 //create a variable that holds the h1
 let clickMe = document.querySelector('h1')
