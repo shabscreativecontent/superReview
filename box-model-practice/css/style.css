@@ -1,4 +1,30 @@
 /* Please make "This is an ad..." blue, but make sure it is specific enough that you could add other h3's somewhere eles in the document. */
+h1 {
+  font-size: 30px;
+  padding-left: 20px;
+  border: 1px solid red;
+}
+
+h2 {
+  font-size: 25px;
+  padding: 20px 0px;
+  border: 10px solid gold;
+  margin: 50px 0px;
+}
+
+span {
+  border: 1px solid black;
+  padding: 30px;
+  color: blue;
+}
+
+section {
+  width: 25%;
+  height: 200px;
+  border: 1px solid purple;
+  text-align: center;
+  margin: 0px auto;
+}
 
 /* Please make "I like turtles." red */
 
