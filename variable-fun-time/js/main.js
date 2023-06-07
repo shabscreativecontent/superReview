@@ -1,6 +1,6 @@
 //--- Easy
 //create a variable and assign it a number
-let val = 13
+let val = 23
 
 //minus 10 from that number
 val = val - 10
