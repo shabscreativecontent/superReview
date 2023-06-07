@@ -9,7 +9,7 @@
 }
 
 /* Please select Duck with the highest level of specificity possible */
-body h1#hi + section.top + section.middle + article.areDucksDinosaurs > h2.likesToQuack.fight1Or100 {
+body > h1#hi + section.top + section.middle + article.areDucksDinosaurs > h2.likesToQuack.fight1Or100 {
   color: red;
 }
 
