@@ -9,7 +9,8 @@ subTwoNums(10,20)
 
 //create a function that divides three numbers and console logs the quotient
 function divThreeNums(n1,n2,n3){
-  console.log(n1/n2/n3);
+  const val = n1/n2/n3
+  console.log(val);
 }
 
 divThreeNums(75,5,3)
