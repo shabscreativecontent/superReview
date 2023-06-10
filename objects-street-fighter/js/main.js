@@ -48,3 +48,33 @@ function Fighters(name, age, gender, skinColor){
 
 
 const alakuko = new Fighters('Tantala', 29, 'Male', 'White')
+
+
+
+class Car{
+  constructor(name, year){
+    this._name = name
+    this._year = year
+  }
+
+  get name(){
+    return this._name
+  }
+
+  start(){
+    console.log(`${this._name} started`);
+  }
+}
+
+class Toyota extends Car{
+  constructor(name, year, make){
+    super(name, year)
+    this._make = make
+  }
+
+  stop(){
+    console.log(`${this.name} just Stoped`);
+  }
+}
+
+let camery = new Toyota("camery", 2008, "toyota camery")
