@@ -18,3 +18,13 @@ function likes(names) {
 let people = ['shedrack', 'jack', 'tolu']
 
 // console.log(likes(people));
+
+
+// Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+
+function maskify(input) {
+  return input.slice(0,-4).replace(/./g, "#") + input.slice(-4);
+}
+
+const cc = "1234 7382 8833 1732 1023"
+console.log(maskify(cc));
