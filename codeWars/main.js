@@ -28,3 +28,8 @@ function maskify(input) {
 
 const cc = "1234 7382 8833 1732 1023"
 console.log(maskify(cc));
+
+
+function mulThreeNums(n1,n2,n3){
+  return n1*n2*n3
+}
