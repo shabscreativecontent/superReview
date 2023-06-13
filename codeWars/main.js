@@ -42,3 +42,14 @@ function friend(friends){
 }
 
 console.log(friend(["Ryan", "Kieran", "Mark"]));
+
+
+//Arrays
+//Your pokemon party order which is a list of pokemon has been leaked to Misty. Please create a function that reverses your list and prints it to the console.
+let pokemonList = ["pikachu", "eevee", "charizard", "ditti", "charmander"]
+
+function reverseList(list){
+console.log(list.reverse());
+}
+
+reverseList(pokemonList)
