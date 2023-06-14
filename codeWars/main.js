@@ -33,3 +33,12 @@ console.log(maskify(cc));
 function mulThreeNums(n1,n2,n3){
   return n1*n2*n3
 }
+
+
+// Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+function friend(friends){
+  //your code here
+  return friends.filter(friend => friend.length === 4)
+}
+
+console.log(friend(["Ryan", "Kieran", "Mark"]));
