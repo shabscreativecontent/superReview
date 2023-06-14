@@ -76,4 +76,41 @@ function programElement(a,b){
   }
 }
 
-console.log(programElement(arr1,arr2));
+// console.log(programElement(arr1,arr2));
+
+// or
+
+function compareArr(a,b) {
+  return a.reduce((acc, c) => acc + c**2, 0) > b.reduce((acc, c) => acc + c**2, 0)
+}
+
+console.log(compareArr(arr2,arr1));
+
+
+//Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+// Some cases:
+// [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+// [68, -1, 1, -7, 10, 10] => [-1, 10]
+
+const newArr = [22, -6, 32, 82, 9, 25]
+const newArr1 = [68, -1, 1, -7, 10, 10]
+
+function mulIndex(arr) {
+  let newArray = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % i === 0) {
+      newArray.push(arr[i]);
+      // console.log(arr[i]);
+    }
+  }
+  console.log(newArray);
+}
+
+// OR
+
+function isMultiple(arr) {
+  return arr.filter((e,i) => e % i === 0)
+}
+
+mulIndex(newArr1)
+console.log(isMultiple(newArr));
