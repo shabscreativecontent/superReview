@@ -53,3 +53,27 @@ console.log(list.reverse());
 }
 
 reverseList(pokemonList)
+
+//Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of each element in a is strictly greater than the sum of the cubes of each element in b.
+const arr1 = [3,4,5,9]
+const arr2 = [27,8]
+
+function programElement(a,b){
+  let aElement = 0
+  let bElement = 0
+  for (let i = 0; i < a.length; i++) {
+    aElement += Math.pow(a[i], 2);
+  }
+
+  for (let i = 0; i < b.length; i++) {
+    bElement += Math.pow(b[i], 3);
+  }
+
+  if (aElement > bElement) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(programElement(arr1,arr2));
