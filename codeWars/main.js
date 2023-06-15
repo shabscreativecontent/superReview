@@ -114,3 +114,27 @@ function isMultiple(arr) {
 
 mulIndex(newArr1)
 console.log(isMultiple(newArr));
+
+
+//Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+
+let arr = ["2","4", 5, 3, 9, "3"]
+
+function returnNum(val) {
+  totalVal = 0
+
+  for (let i = 0; i < val.length; i++) {
+    totalVal += Number(val[i]);
+  }
+
+  console.log(totalVal);
+}
+
+// OR
+
+function reTotalNum(arr){
+  return arr.reduce((acc, c) => acc + Number(c), 0)
+}
+
+returnNum(arr)
+console.log(reTotalNum(arr));
