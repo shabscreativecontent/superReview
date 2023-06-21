@@ -118,7 +118,7 @@ console.log(isMultiple(newArr));
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
-let arr = ["3","5", 4, 4, 5, "4"]
+let arr = ["3","5", 4, 8, 9, "4"]
 
 function returnNum(val) {
   totalVal = 0
