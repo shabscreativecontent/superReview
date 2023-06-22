@@ -154,3 +154,29 @@ function solution(str, ending){
 
 
 console.log(solution('abc', 'bc'));
+
+
+
+
+
+
+
+function arrayDiff(a, b) {
+  let newArr = []
+
+  a.forEach(val1 => {
+    if (b.length > 0) {
+      b.forEach(val => {
+        if (val1 !== val){
+          newArr.push(val1)
+        }
+      })
+    } else if (b.length === 0) {
+      newArr.push(val1)
+    }
+  })
+
+  return newArr;
+}
+
+console.log(arrayDiff([1,2,2,2,3],[]));
