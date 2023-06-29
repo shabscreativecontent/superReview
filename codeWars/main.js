@@ -158,7 +158,11 @@ console.log(solution('abc', 'bc'));
 
 
 
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+//
+// It should remove all values from list a, which are present in list b keeping their order.
 
+// arrayDiff([1,2],[1]) == [2]
 
 
 function arrayDiff(a, b) {
@@ -180,3 +184,19 @@ function arrayDiff(a, b) {
 }
 
 console.log(arrayDiff([1,2,2,2,3],[]));
+
+
+// Promise & async/await in the DOM
+document.querySelector('#clickMe').addEventListener('click', makeReq)
+
+async function makeReq(){
+
+  const userName = document.querySelector("#userName").value;
+  const res = await fetch(`/api?student=${userName}`)
+  const data = await res.json()
+
+  console.log(data);
+  document.querySelector("#personName").textContent = data.name
+  document.querySelector("#personStatus").textContent = data.status
+  document.querySelector("#personOccupation").textContent = data.currentOccupation
+}
