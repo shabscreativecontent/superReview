@@ -42,7 +42,13 @@ app.get('/api/persons/:id', (request, response) => {
    const peopleId = Number(request.params.id)
    const person = persons.find(num => num.id === peopleId)
 
-   response.json(person)
+   if(person){
+      response.json(person)
+   } else {
+      response.status(404).json({
+         error: 'Content Not Found'
+      })
+   }
 })
 
 app.get('/info', (request, response) => {
