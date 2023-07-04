@@ -55,7 +55,7 @@ app.get('/info', (request, response) => {
    const numP = persons.length
    const time = new Date()
 
-   console.log(time);
+   // console.log(time);
    response.send(`
      <p>Phonebook has info for ${numP} people</p>
      <p>${time}</p>
