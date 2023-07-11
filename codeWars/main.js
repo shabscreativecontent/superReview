@@ -187,7 +187,7 @@ console.log(arrayDiff([1,2,2,2,3],[]));
 
 
 // Promise & async/await in the DOM
-document.querySelector('#clickMe').addEventListener('click', makeReq)
+// document.querySelector('#clickMe').addEventListener('click', makeReq)
 
 async function makeReq(){
 
@@ -200,3 +200,49 @@ async function makeReq(){
   document.querySelector("#personStatus").textContent = data.status
   document.querySelector("#personOccupation").textContent = data.currentOccupation
 }
+
+
+
+
+// Come up with with a parent class
+// Extend that parent class into two children
+// Use Encapsulation, Abstraction, Inheritance, and Polymorphism
+
+class Animal {
+  constructor(name) {
+    this._name = name
+  }
+
+  get name(){
+    return this._name
+  }
+
+  walk(){
+    console.log(`${this._name} is walking`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, legs) {
+    super(name)
+    this.legs = legs
+  }
+
+  speak(){
+    console.log(`${this.name} is speaking`);
+  }
+}
+
+
+class Cat extends Dog {
+  constructor(name, legs, color) {
+    super(name, legs)
+    this._color = color
+  }
+}
+
+
+
+
+const pabs = new Cat('pabs', 4)
+console.log(pabs.walk());

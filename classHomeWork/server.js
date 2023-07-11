@@ -59,7 +59,7 @@ app.get('/info', (request, response) => {
    response.send(`
      <p>Phonebook has info for ${numP} people</p>
      <p>${time}</p>
-     `)
+
 })
 
 app.listen(PORT, () => {
