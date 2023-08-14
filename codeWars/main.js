@@ -278,3 +278,20 @@ function deleteNtn(arr){
 }
 
 deleteNtn([1,2,3,4,2,1,2,3,3])
+
+
+let num = 20
+
+function mulOf3and5(n){
+  if(n < 0){
+    console.log(0)
+  }else {
+    for(let i = 1; i < n; i++){
+      if(i % 3 === 0 || i % 5 === 0){
+        console.log(i)
+      }
+    }
+  }
+}
+
+mulOf3and5(num)
