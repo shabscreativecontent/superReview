@@ -287,30 +287,18 @@ deleteNtn([1,2,3,4,2,1,2,3,3])
 
 // Note: If the number is a multiple of both 3 and 5, only count it once.
 
-let num = 20
+let num = -10
 
 function mulOf3and5(n){
-  if(n < 0){
-    console.log(0)
-  }
+  const newArr = []
 
   for(let i = 1; i < n; i++){
     if(i % 3 === 0 || i % 5 === 0){
-      console.log(i);
+      newArr.push(i);
     }
   }
-}
-
-function mulsOf3and5(n){
-  if(n < 0){
-    console.log(0)
-  }else {
-    for(let i = 1; i < n; i++){
-      if(i % 3 === 0 || i % 5 === 0){
-        console.log(i);
-      }
-    }
-  }
+  
+  console.log(newArr);
 }
 
 mulOf3and5(num)
