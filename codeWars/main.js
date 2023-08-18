@@ -297,8 +297,10 @@ function mulOf3and5(n){
       newArr.push(i);
     }
   }
-  
-  console.log(newArr);
+
+  const sumWithInitial = newArr.reduce((acc, currentV) => acc + currentV, 0);
+
+  console.log(sumWithInitial);
 }
 
 mulOf3and5(num)
