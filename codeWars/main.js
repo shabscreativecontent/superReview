@@ -320,6 +320,8 @@ mulOf3and5(num)
 function isPrime(num){
   if(num === 1){
     return false
+  } else if(num === 2 || num % 2 === 1 || num % 3 === 1){
+    return true
   }
 }
 
