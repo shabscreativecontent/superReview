@@ -322,7 +322,9 @@ function isPrime(num){
     return false
   } else if(num === 2 || num % 2 === 1 || num % 3 === 1){
     return true
+  } else {
+    return false
   }
 }
 
-console.log(isPrime(13))
+console.log(isPrime(17))
