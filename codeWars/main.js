@@ -318,13 +318,17 @@ mulOf3and5(num)
 // NOTE on performance: There are no fancy optimizations required, but still the most trivial solutions might time out. Numbers go up to 2^31 ( or similar, depending on language ). Looping all the way up to n, or n/2, will be too slow.
 
 function isPrime(num){
+  let result;
+
   if(num === 1){
-    return false
+    result = false
   } else if(num === 2 || num % 2 === 1 || num % 3 === 1){
-    return true
+    result = true
   } else {
-    return false
+    result = false
   }
+
+  console.log(result);
 }
 
-console.log(isPrime(17))
+isPrime(18)
