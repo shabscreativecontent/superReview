@@ -331,7 +331,7 @@ function isPrime(num){
   if(result){
     console.log(`${num} is prime`)
   }else{
-    
+    console.log(`${num} is not prime`)
   }
 }
 
