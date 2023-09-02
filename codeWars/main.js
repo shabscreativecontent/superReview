@@ -329,8 +329,10 @@ function isPrime(num){
   }
 
   if(result){
-    console.log(`${num} is prime`)
+    
+  }else{
+    
   }
 }
 
-isPrime(18)
+isPrime(5)
