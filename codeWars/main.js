@@ -202,8 +202,6 @@ async function makeReq(){
 }
 
 
-
-
 // Come up with with a parent class
 // Extend that parent class into two children
 // Use Encapsulation, Abstraction, Inheritance, and Polymorphism
@@ -305,9 +303,6 @@ function mulOf3and5(n){
 
 mulOf3and5(num)
 
-
-
-
 // Define a function that takes an integer argument and returns a logical value true or false depending on if the integer is a prime.
 
 // Per Wikipedia, a prime number ( or a prime ) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
@@ -336,8 +331,6 @@ function isPrime(num){
 }
 
 isPrime(5)
-
-
 
 
 // Create a function which answers the question "Are you playing banjo?".
@@ -374,3 +367,49 @@ function areYouPlayingBanjo(name) {
 
 
 
+// Create a function with two arguments that will return an array of the first n multiples of x.
+
+// Assume both the given number and the number of times to count will be positive numbers greater than 0.
+
+// Return the results as an array or list ( depending on language ).
+
+
+const countBy = (x, n) => {
+  let newArr = []
+
+  for(let i = 1; i <= n; i++){
+    const p = x * i
+    newArr.push(p)
+  }
+
+  return newArr;
+}
+
+console.log(countBy(2, 5))
+
+
+// // Similar code
+
+function countBy1(x, n) {
+  var z = [];
+  for (i = 1; i <= n; i++) {
+      z.push(x * i);
+  }
+  return z;
+}
+
+
+ // Write a function that removes the spaces from the string, then return the resultant string.
+ // trim() 
+ 
+ const noSpace = x => {
+  return x.trim().replace.All(" ", "")
+}
+
+console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB'));
+
+// // Similar code
+
+function noSpace1(x){
+  return x.replace(/\s/g, '');
+}
