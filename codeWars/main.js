@@ -413,3 +413,29 @@ console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB')
 function noSpace1(x){
   return x.replace(/\s/g, '');
 }
+ 
+ 
+ 
+ // Given an array of integers, return a new array with each value doubled.
+ 
+ const doubledIntegersValue = x => {
+  return x.map((x) => x * 2)
+}
+
+console.log(doubledIntegersValue([4,4,5,3]));
+
+//  //  Similar code
+function maps(x){
+  //return x.map(el => el * 2);
+  let arr = [];
+  for(let i = 0; i < x.length; i++){
+  arr.push(x[i] * 2);
+  }
+  return arr;
+}
+
+// // similar code 
+const maps1 = arr => arr.map( x => x * 2 )
+
+
+
