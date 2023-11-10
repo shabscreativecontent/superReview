@@ -403,7 +403,7 @@ function countBy1(x, n) {
  // trim() 
  
  const noSpace = x => {
-  return x.trim().replace.All(" ", "")
+  return x.trim().replaceAll(" ", "")
 }
 
 console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB'));
@@ -454,7 +454,28 @@ const maps1 = arr => arr.map( x => x * 2 )
   }
 }
 
-console.log(zeroFuel(100,70,1))
+console.log(zeroFuel(100,70,2))
 
 // // Similar code 
 const zeroFuel1 = (distanceToPump, mpg, fuelLeft) => mpg * fuelLeft >= distanceToPump;
+
+
+
+
+// If you can't sleep, just count sheep!!
+
+// Task:
+// Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+
+
+const countSheep = function (num){
+  let newA = []
+
+  for(let i = 0; i < num; i++){
+    newA.push(`${i} sheep...`)
+  }
+
+  return newA.join().replaceAll(",", "");
+} 
+
+console.log(countSheep(4));
