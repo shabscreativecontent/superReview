@@ -479,3 +479,11 @@ const countSheep = function (num){
 } 
 
 console.log(countSheep(4));
+
+// // Similar code
+
+var countSheep1 = function (num){
+  let str = "";
+  for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  return str;
+}
