@@ -487,3 +487,16 @@ var countSheep1 = function (num){
   for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
   return str;
 }
+
+
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+function evenOrOdd(num){
+  if(num % 2 === 0){
+    return "Even"
+  } else if(num === 1 || num % 2 === 1 || num % 2 === -1) {
+    return "Odd"
+  }
+}
+
+console.log(evenOrOdd(-5))
