@@ -500,3 +500,10 @@ function evenOrOdd(num){
 }
 
 console.log(evenOrOdd(-5))
+
+// // Similar code
+
+function evenOrOdd1(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd';
+}
+
