@@ -518,3 +518,13 @@ function evenOrOdd1(number) {
 
 // patrick feeney => P.F
 
+function convertInitials(user) {
+  const convert2array = user.split(' ')
+  if(convert2array.length === 2){
+    const convert2string = convert2array[1].split('')
+    const convert2string1 = convert2array[0].split('')
+    return `${convert2string1[0].toUpperCase()}.${convert2string[0].toUpperCase()}`
+  }
+}
+
+console.log(convertInitials("Ajide shedrack"));
