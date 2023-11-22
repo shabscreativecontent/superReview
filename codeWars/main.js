@@ -528,3 +528,5 @@ function convertInitials(user) {
 }
 
 console.log(convertInitials("Ajide shedrack"));
+
+// // SimilAR Code
