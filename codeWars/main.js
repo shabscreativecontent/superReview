@@ -543,3 +543,15 @@ function abbrevName(name){
 
 // Note: if there is nothing to sum, the sum is default to 0.
 
+function sumOfPositives(arr){
+  let sumNum = 0
+  arr.map((x)=>{
+    if(x >= 0){
+      sumNum += x
+    }
+  })
+
+  console.log(sumNum)
+}
+
+sumOfPositives([-4,-5,1,4,3,2,1])
