@@ -555,3 +555,6 @@ function sumOfPositives(arr){
 }
 
 sumOfPositives([-4,-5,1,4,3,2,1])
+
+// // Similer Code
+
