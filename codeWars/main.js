@@ -558,3 +558,17 @@ sumOfPositives([-4,-5,1,4,3,2,1])
 
 // // Similer Code
 
+function positiveSum(arr) {
+  var total = 0;    
+
+  // setup loop to go through array of given length
+  for (i = 0; i < arr.length; i++) {
+    // if arr[i] is greater than zero 
+    if (arr[i] > 0) {
+      // add arr[i] to total
+      total += arr[i];
+    }
+  }
+  // return total
+  return total;                         
+}
