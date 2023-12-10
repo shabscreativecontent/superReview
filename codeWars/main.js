@@ -582,3 +582,6 @@ function positiveSum(arr) {
 
 
 let fruits = ['Orange', 'Apple', 'Orange', 'Apple']
+
+// alert( fruits.indexOf('Apple') ); // 0 (first Apple)
+// alert( fruits.lastIndexOf('Orange') ); // 2 (last Apple)
