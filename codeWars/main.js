@@ -583,5 +583,39 @@ function positiveSum(arr) {
 
 let fruits = ['Orange', 'Apple', 'Orange', 'Apple']
 
-alert( fruits.indexOf('Apple') ); // 0 (first Apple)
-alert( fruits.lastIndexOf('Orange') ); // 2 (last Apple)
+// alert( fruits.indexOf('Apple') ); // 0 (first Apple)
+// alert( fruits.lastIndexOf('Orange') ); // 2 (last Apple)
+
+
+// Sort() Method
+function compareNumeric(a, b) {
+  if (a > b) return 1;
+  if (a == b) return 0;
+  if (a < b) return -1;
+}
+
+let arr99 = [ 1, 2, 15 ];
+
+arr99.sort(compareNumeric);
+
+// alert(arr99);  // 1, 2, 15
+
+
+// OR
+arr.sort( (a, b) => a - b );
+
+
+// camelize("background-color") == 'backgroundColor';
+
+let arrStr = "background-color"
+
+const newResult = arrStr.split('-')
+const newAns = newResult.map((items, array) => {
+  if (array === 0) {
+    return items
+  } else {
+    return items[0].toUpperCase() + items.slice(1)
+  }
+})
+
+console.log(newAns)
