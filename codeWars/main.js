@@ -618,4 +618,4 @@ const newAns = newResult.map((items, array) => {
   }
 })
 
-console.log(newAns)
+// console.log(newAns)
