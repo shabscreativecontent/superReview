@@ -619,3 +619,12 @@ const newAns = newResult.map((items, array) => {
 })
 
 // console.log(newAns)
+
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+// Use conditionals to return the proper message:
+
+// case	return
+// Name equals Owner	'Hello boss'
+// otherwise	'Hello guest'
+
