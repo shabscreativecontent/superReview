@@ -628,3 +628,5 @@ const newAns = newResult.map((items, array) => {
 // Name equals Owner	'Hello boss'
 // otherwise	'Hello guest'
 
+const Greetings = function(name, owner){
+}
