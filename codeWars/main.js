@@ -629,4 +629,5 @@ const newAns = newResult.map((items, array) => {
 // otherwise	'Hello guest'
 
 const Greetings = function(name, owner){
+  // Add code here
 }
