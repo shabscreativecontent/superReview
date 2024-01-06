@@ -631,5 +631,7 @@ const newAns = newResult.map((items, array) => {
 const Greetings = function(name, owner){
   if(name.toLowerCase() === owner.toLowerCase()){
     return `Hello boss`
+  } else {
+    return `Hello guest`
   }
 }
