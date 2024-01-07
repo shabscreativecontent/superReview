@@ -635,3 +635,5 @@ const Greetings = function(name, owner){
     return `Hello guest`
   }
 }
+
+console.log();
