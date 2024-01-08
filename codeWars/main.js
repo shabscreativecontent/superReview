@@ -636,4 +636,4 @@ const Greetings = function(name, owner){
   }
 }
 
-console.log();
+console.log(Greetings('shabs', 'john'));
