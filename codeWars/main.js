@@ -637,3 +637,5 @@ const Greetings = function(name, owner){
 }
 
 console.log(Greetings('shabs', 'john'));
+
+// Similar Code Solution
