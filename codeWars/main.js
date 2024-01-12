@@ -642,4 +642,5 @@ console.log(Greetings('shabs', 'john'));
 
 function greet (name, owner) {
   // Add Code
+  return name === owner ? 'Hello boss' : 	'Hello guest';
 }
