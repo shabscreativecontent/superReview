@@ -658,3 +658,14 @@ const squareSum = function(arr){
 
 // console.log()
 squareSum([2,2,2])
+
+
+// Similar code 
+ 
+function squrSum(numbers){
+  const total = numbers.reduce((accumulator, currentValue) => accumulator + (currentValue * currentValue), 0)
+
+  console.log(total);
+}
+
+squrSum([3,3,3])
