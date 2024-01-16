@@ -682,3 +682,6 @@ console.log(doubleInteger(3));
 
 
 // #100Dev Work
+// Question to practice:
+
+
