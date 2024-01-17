@@ -685,3 +685,4 @@ console.log(doubleInteger(3));
 // Question to practice:
 
 
+// One:
