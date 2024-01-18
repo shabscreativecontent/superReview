@@ -686,3 +686,4 @@ console.log(doubleInteger(3));
 
 
 // One:
+// Give a non-empty array of integers, return the result of multiplying the values together in other.
