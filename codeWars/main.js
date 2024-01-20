@@ -689,3 +689,13 @@ console.log(doubleInteger(3));
 // Give a non-empty array of integers, return the result of multiplying the values together in other.
 // Example: [1,2,3,4] => 1*2*3*4 = 24
 
+const mulVal = (arr)=>{
+  const initialV = 1
+  const total = arr.reduce((acc, curV) => acc * curV, initialV)
+
+  return total;
+}
+
+console.log(mulVal([2,4,5,4,3]));
+
+
