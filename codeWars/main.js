@@ -699,3 +699,4 @@ const mulVal = (arr)=>{
 console.log(mulVal([2,4,5,4,3]));
 
 
+// Two:
