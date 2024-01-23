@@ -703,3 +703,15 @@ console.log(mulVal([2,4,5,4,3]));
 // You will be given an array of the family member ages, in any order. the ages will be given in whole numbers, so a baby of 5months, will have an ascribed 'age' of 0.
 // Return a new array with [youngest age, oldest age, difference between the youngest and oldest age].
 
+const solveAgeProblem = (arr)=>{
+  const lowestAge = Math.min(...arr)
+  const highestAge = Math.max(...arr)
+  const difBetwAge = lowestAge - highestAge
+
+  const newArr = [lowestAge, highestAge, difBetwAge]
+  console.log(newArr);
+}
+
+solveAgeProblem([3,5,7,2,3,-6])
+
+
