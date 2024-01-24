@@ -715,3 +715,23 @@ const solveAgeProblem = (arr)=>{
 solveAgeProblem([3,5,7,2,3,-6])
 
 
+// Three
+// Sum all the number of the array excecpt the highest and the lowest(the value , not the index)/
+// Example: [6,2,1,8,10] => 16
+//          [1,1,11,2,3] => 6
+
+const sumAllExcept = (arr)=>{
+  let total = 0
+  const lowestAge = Math.min(...arr)
+  const highestAge = Math.max(...arr)
+
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] !== lowestAge && arr[i] !== highestAge){
+      total += arr[i]
+    }
+  }
+
+  console.log(total);
+}
+
+sumAllExcept([3,5,7,2,3,-6])
