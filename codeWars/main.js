@@ -735,3 +735,8 @@ const sumAllExcept = (arr)=>{
 }
 
 sumAllExcept([3,5,7,2,3,-6])
+
+
+
+// Return the number (count) of vowels in the given string.
+
