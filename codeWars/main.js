@@ -731,12 +731,17 @@ const sumAllExcept = (arr)=>{
     }
   }
 
-  console.log(total);
+  return total;
 }
 
-sumAllExcept([3,5,7,2,3,-6])
+console.log(sumAllExcept([3,5,7,2,3,-6]))
 
 
 
 // Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
 
