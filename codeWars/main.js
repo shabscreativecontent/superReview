@@ -745,3 +745,17 @@ console.log(sumAllExcept([3,5,7,2,3,-6]))
 // The input string will only consist of lower case letters and/or spaces.
 
 
+const countVowels = (str) => {
+  const lowercase = str.toLowerCase()
+  const strToArr = lowercase.split('')
+  let newArr = []
+
+  strToArr.forEach((val, index) => {
+    if(val === 'a' || val === 'e' || val === 'i' || val === 'o' || val === 'u'){
+      return newArr.push(index)
+    }
+  })
+
+  console.log(newArr.length);
+}
+
