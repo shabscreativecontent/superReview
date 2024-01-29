@@ -759,3 +759,5 @@ const countVowels = (str) => {
   console.log(newArr.length);
 }
 
+
+countVowels("abracadabra")
