@@ -761,3 +761,5 @@ const countVowels = (str) => {
 
 
 countVowels("abracadabra")
+
+// // Similar Code
