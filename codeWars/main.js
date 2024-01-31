@@ -763,3 +763,20 @@ const countVowels = (str) => {
 countVowels("abracadabra")
 
 // // Similar Code
+
+function getCount(str) {
+  const caseStr = str.toLowerCase()
+  var vowelsCount = 0;
+  for (index in caseStr){
+    switch (caseStr[index]) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    vowelsCount++;
+    break;
+    }   
+  }
+  return vowelsCount;
+}
