@@ -782,3 +782,49 @@ function getCount(str) {
 }
 
 console.log(getCount("Adebayo"))
+
+
+// ChartAt
+// is the ability to get a value of an index inside a string.
+
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+console.log(`The character at index 4 is ${sentence.charAt(5)}`);
+
+
+// Concat
+// its the glowing of a string value with another string value.
+
+const str1 = 'Hello';
+const str2 = 'World';
+
+console.log(str1.concat(' ', str2));
+// Expected output: "Hello World"
+
+
+// Includes
+// is a method to check is a word is inside a string
+const sen = 'The quick brown fox jumps over the lazy dog.';
+
+const word = 'fox';
+
+console.log(
+  `The word "${word}" ${
+    sen.includes(word) ? 'is' : 'is not'
+  } in the sentence`
+)
+
+
+// IndexOf
+// its a method use in an Array, to get an element at a giving index
+
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// Expected output: 1
+
+// Start from index 2
+console.log(beasts.indexOf('bison', 2));
+// Expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// Expected output: -1
