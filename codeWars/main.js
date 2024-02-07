@@ -790,3 +790,6 @@ console.log(getCount("Adebayo"))
 
 const sentence = 'The quick brown fox jumps over the lazy dog.';
 console.log(`The character at index 4 is ${sentence.charAt(5)}`);
+
+
+// Concat
