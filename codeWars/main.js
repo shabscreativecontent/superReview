@@ -796,3 +796,5 @@ console.log(`The character at index 4 is ${sentence.charAt(5)}`);
 // its the glowing of a string value with another string value.
 
 const str1 = 'Hello';
+const str2 = 'World';
+
