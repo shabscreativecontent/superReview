@@ -803,3 +803,4 @@ console.log(str1.concat(' ', str2));
 
 
 // Includes
+// is a method to check is a word is inside a string
