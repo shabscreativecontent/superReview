@@ -815,3 +815,5 @@ console.log(
 )
 
 
+// IndexOf
+// its a method use in an Array, to get an element at a giving index
