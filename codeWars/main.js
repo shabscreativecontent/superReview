@@ -808,3 +808,10 @@ const sen = 'The quick brown fox jumps over the lazy dog.';
 
 const word = 'fox';
 
+console.log(
+  `The word "${word}" ${
+    sen.includes(word) ? 'is' : 'is not'
+  } in the sentence`
+)
+
+
