@@ -829,3 +829,5 @@ console.log(beasts.indexOf('bison', 2));
 
 console.log(beasts.indexOf('giraffe'));
 // Expected output: -1
+
+console.log(beasts.indexOf('camel'));
