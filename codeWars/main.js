@@ -831,3 +831,142 @@ console.log(beasts.indexOf('giraffe'));
 // Expected output: -1
 
 console.log(beasts.indexOf('camel'));
+
+
+
+// Given a string of text, write an algorithm that returns the text received in a reversed format. E.g
+// reverseString('algorithms') // should return 'smhtirogla'
+
+function reverseString(text){
+  // return text.split("").reverse().join("")
+
+  // // or 
+
+  // return [...text].reverse().join("")
+
+  // // or
+
+  // let result = ''
+
+  // // for (let i = text.length - 1; i >= 0; i--) {
+  // //   result += text[i];
+  // // }
+
+  // // // Or
+
+  // for (let char of text){
+  //   result = char + result
+  // }
+
+  // return result
+
+  // // OR 
+
+  // if(text === ""){
+  //   return ""
+  // } else {
+  //   return reverseString(text.substr(1)) + text[0]
+  // }
+
+  // // Or
+
+  // return text.split("").reduce((acc, char) => char + acc, '')
+
+  // // Or 
+
+  return [...text].reduce((acc, char) => char + acc, '')
+
+}
+
+console.log(reverseString("Shabs Planta"));
+const tt = "boy"
+console.log(tt.length);
+
+
+// Given a string of text containing 0 or more vowels, count the number of vowels that can be found within the text. For example:
+// vowelsCounter('anehizxcv') // will return 3
+
+// const vowel = ["a","e","i","o","u"]
+
+// function vowelsCount(text){
+//   let counter = 0
+
+//   for (const letter of text.toLowerCase()) {
+//     if (vowel.includes(letter)){
+//       counter++
+//     }
+//   }
+
+//   return counter
+// }
+
+// // OR 
+
+function vowelsCount(text){
+  let matchingInstance = text.match(/[aeiou]/gi)
+
+  if(matchingInstance){
+    return matchingInstance.length
+  } else {
+    return 0
+  }
+}
+
+// alert(vowelsCount("ShabsLaw"))
+
+
+
+/* CHALLENGE
+Given a string of text, find and return the most recurring character. 
+e.g maxRecurringChar('aabacada') // will return 'a'
+*/
+
+// function maxRecurringChar(text){
+//   let charMap = {}
+//   let marCharVal = 0
+//   let maxChar = ''
+
+//   for(let char of text){
+//     if(charMap.hasOwnProperty(char)){
+//       charMap[char]++
+//     } else {
+//       charMap[char] = 1
+//     }
+//   }
+
+//   for(let char in charMap){
+//     // return charMap[char]
+//     if(charMap[char] > marCharVal){
+//       marCharVal = charMap[char]
+//       maxChar = char
+//     }
+//   }
+
+//   return maxChar
+// }
+
+// // Or
+
+function maxRecurringChar(text){
+  let charMap = {}
+  let keysArr = []
+  let valuesArr = []
+  let maxCharValue = 0
+
+  for(let char of text.toLowerCase()){
+    if(charMap.hasOwnProperty(char)){
+      charMap[char]++
+    } else {
+      charMap[char] = 1
+    }
+  }
+
+  keysArr = Object.keys(charMap)
+  valuesArr = Object.values(charMap)
+  maxCharValue = Math.max(...valuesArr)
+
+  return keysArr[valuesArr.indexOf(maxCharValue)]
+
+}
+
+console.log(maxRecurringChar("teeeeeextxxXXxxxeeExx"));
