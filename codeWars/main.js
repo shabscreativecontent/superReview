@@ -789,7 +789,7 @@ console.log(getCount("Adebayo"))
 
 
 const sentence = 'The quick brown fox jumps over the lazy dog.';
-console.log(`The character at index 4 is ${sentence.charAt(5)}`);
+console.log(`The character at index 1 is ${sentence.charAt(1)}`);
 
 
 // Concat
@@ -970,3 +970,269 @@ function maxRecurringChar(text){
 }
 
 console.log(maxRecurringChar("teeeeeextxxXXxxxeeExx"));
+
+
+
+/* CHALLENGE
+  Given a sentence containing two or more words, 
+  return the equivalent of the sentence when capitalised. E.g
+  capSentence('the tales of scotch!') // would return 'The Tales Of Scotch!'
+*/
+
+function capSentence(text){
+  let wordsArr = text.toLowerCase().split(" ")
+  // let capsArray = []
+
+  // wordsArr.forEach(word => {
+  //   capsArray.push(word[0].toUpperCase() + word.slice(1))
+  // })
+
+  // // Or
+
+  // let capsArray = wordsArr.map(word => {
+  //   return word[0].toUpperCase() + word.slice(1)
+  // })
+
+  // // Or
+
+  let capsArray = wordsArr.map(word => {
+    return word.replace(word[0], word[0].toUpperCase())
+  })
+
+  return capsArray.join(" ")
+}
+
+console.log(capSentence("my nAme is Shabs Law"))
+
+
+
+
+/* CHALLENGE
+Given a string of text, return true or false indicating whether or not the text is a palindrome.
+e.g palindromeChecker('racecar') // will return true
+*/
+
+// function palindromeChecker(text){
+//   let reversedText = text.toLowerCase().split("").reverse().join("")
+
+//   return text.toLowerCase() === reversedText
+// }
+
+// // OR
+
+// function palindromeChecker(text){
+//   let charArray = text.toLowerCase().split("")
+
+//   let result = charArray.every((letter, index) => {
+//     return letter === charArray[charArray.length - index - 1]
+//   })
+
+//   return result;
+// }
+
+// // Or
+
+function palindromeChecker(text){
+  let textLen = text.length
+
+  for (let i = 0; i < textLen/2; i++){
+    if(text[i] !== text[textLen - 1 - i]){
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(palindromeChecker("leonnoel"));
+
+
+
+/* CHALLENGE
+Given two strings of equal length, calculate and return the the hamming distance.
+E.g hammingDistance('rover', 'river') // should return 1
+*/
+
+function hammingDistance(stringA, stringB){
+  let result = 0
+
+  if(stringA.length == stringB.length){
+    
+    for (let i = 0; i < stringA.length; i++) {
+      if (stringA[i].toLowerCase() != stringB[i].toLowerCase()) {
+          result++
+      }
+    }
+
+    return result
+    
+  } else {
+    throw new Error("String do not have equal length")
+  }
+}
+
+console.log(hammingDistance("boag", "baoy"))
+
+
+
+/*
+Given a sentence, return the longest word in the string. E.g
+
+longestWord('Top Shelf Web Development Training on Scotch') 
+//should return 'Development'
+*/
+
+// function longestWord(sentence){
+//   let senWordArr = sentence.split(" ")
+//   let maxWord = 0
+//   let result = ''
+
+//   for(let i = 0; i < senWordArr.length; i++){
+//     if(senWordArr[i].length > maxWord){
+//       maxWord = senWordArr[i].length
+//       result = senWordArr[i]
+//     }
+//   }
+
+//   return result
+// }
+
+// // Or
+
+// function longestWord(text){
+//   let result = text.split(" ").reduce((maxLengthWord, currentWord) => {
+//     if(currentWord.length > maxLengthWord.length){
+//       return currentWord
+//     } else {
+//       return maxLengthWord
+//     }
+//   }, "")
+
+//   return result
+// }
+
+// // Or
+
+function longestWord(text){
+  let sortedArr = text.split(" ").sort((wordA, wordB) => wordB.length - wordA.length)
+
+  return sortedArr[0]
+}
+
+console.log(longestWord("i am a nigerian nigga"));
+
+
+
+
+/*
+Receiving a sentence, a word in the sentence and a replacement for that word as arguments, perform a search and replace on the sentence using the arguments provided and return the new sentence. E.g
+searchReplace("He is Sleeping on the couch", "Sleeping", "sitting") 
+// should return "He is Sitting on the couch"
+*/
+
+// function searchReplace(str, word, newWord){
+//   // Code Here
+//   if(word[0] === word[0].toUpperCase()){
+//     newWord = newWord[0].toUpperCase() + newWord.slice(1)
+//   }
+
+//   return str.replace(word, newWord)
+// }
+
+// // Or
+
+function searchReplace(str, word, newWord){
+  // Code Here
+  let regex = new RegExp(word, "gi")
+  if (/[A-Z]/.test(word[0])){
+    newWord = newWord.charAt(0).toUpperCase() + newWord.slice(1)
+  }
+
+  return str.replace(regex, newWord)
+}
+
+console.log(searchReplace("i love Jesus", "Jesus", "god"));
+
+
+/*
+Translate the provided string to Pig Latin by following the rules below:
+
+- For words that begin with consonant sounds, the consonant before the initial vowel should be moved to the end of the word sequence and "ay" affixed. E.g
+"pig" = "igpay"
+- For words that begin with consonant clusters, the clusters should be moved to the end of the word sequence and "ay" affixed. E.g
+"glove" = "oveglay"
+- For words that begin with vowel sounds, simply add "way" to the end of the word. E.g
+"explain" = "explainway”
+*/
+
+
+// // WITH AN IMPERATIVE approach
+
+function pigLatin(string){
+  let str = string.toLowerCase()
+
+  let vowels = ["a", "e", "i", "o", "u"]
+  let vowelIndex = 0
+
+  if(vowels.includes(str[0])){
+    return str + 'way'
+  } else {
+    for(let char of str){
+      if(vowels.includes(char)){
+        vowelIndex = str.indexOf(char)
+        break;
+      }
+    }
+
+    return str.slice(vowelIndex) + str.slice(0, vowelIndex) + "ay"
+  }
+}
+
+// // WITH AN DECLARATIVE approach
+
+// function pigLatin(str){
+//   return str
+//     .replace(/^([aeiouy])(._)/, '$1$2way')
+//     .replace(/^(_[_^aeiouy]+)(._)/, '$2$1ay')
+// }
+
+console.log(pigLatin("tomtom"));
+
+
+/* 
+ Given two or more arrays, write a function that combines
+ their elements into one array without any repetition. 
+ E.g  mergeArrays([1,2,3,3,3], [1,4,5,2]) // should return [1,2,3,4,5]
+*/
+
+// function chunkArray(array, size) {
+//   // Code goes here
+//   let result = []
+  
+//   for(let value of array){
+//       let lastArr = result[result.length -1]
+      
+//       if(!lastArr || lastArr.length == size){
+//           result.push([value])
+//       } else {
+//           lastArr.push(value)
+//       }
+//   }
+
+//   return result
+// }
+
+// // Or
+
+function chunkArray(array, size){
+  let result = []
+  let arrCopy = [...array]
+
+  while(arrCopy.length > 0){
+    result.push(arrCopy.slice(0, size))
+  }
+
+  return result
+}
+
+console.log(chunkArray([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], 5));
+
