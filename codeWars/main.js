@@ -1236,3 +1236,33 @@ function chunkArray(array, size){
 
 console.log(chunkArray([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], 5));
 
+
+/*
+Return the first element from the given array that passes the test specified by the provided function. Both the array and function are passed into the function as arguments as shown below: BUild how own filter Function
+*/
+
+// function arrayFilter(arr, func){
+//   for(elem of arr){
+//     if(func(elem)){
+//       return elem
+//     }
+//   }
+
+//   return undefined
+// }
+
+
+// // OR
+
+// function arrayFilter(arr, func){
+//   let filteredArray = arr.filter(func)
+
+//   return filteredArray[0] ? filteredArray[0] : undefined;
+// }
+
+// // OR
+
+function arrayFilter(arr, func){
+  return arr.find(func)
+}
+
