@@ -1266,3 +1266,28 @@ function arrayFilter(arr, func){
   return arr.find(func)
 }
 
+
+/*
+Write a function that returns the factorial of 
+the provided integer(n). E.g
+    factorial(5) // should return 120
+*/
+
+
+
+function factorial(num){
+  let result = 1
+
+  if(num > 0){
+      for (let i = num; i > 0; i--) {
+          result = result * i
+      }
+  } else {
+      result = 1
+  }
+
+  return result
+}
+
+console.log(factorial(5));
+
