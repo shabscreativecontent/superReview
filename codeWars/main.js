@@ -1311,3 +1311,36 @@ console.log(reverseInteger(-123));
 
 
 
+
+/*
+    Write a program that prints the numbers from 1 to n. But for 
+    multiples of three print “Fizz” instead of the number and for 
+    the multiples of five print “Buzz”. For numbers which are 
+    multiples of both three and five print “FizzBuzz”.
+*/
+
+
+
+function fizzBuzz(n) {
+  // Code goes here
+  let arr = []
+
+  for(let i = 1; i <= n; i++){
+    // arr.push(i)
+    if(i%3 === 0 && i%5 === 0){
+      arr.push("Fizz")
+    } else if(i%5 === 0){
+      arr.push("Buzz")
+    } else if(i%3 === 0){
+      arr.push("FizzBuzz")
+    } else{
+      arr.push(i)
+    }
+
+  }
+
+  return arr
+}
+
+console.log(fizzBuzz(17));
+// fizzBuzz(17)
