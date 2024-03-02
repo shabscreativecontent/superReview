@@ -1344,3 +1344,7 @@ function fizzBuzz(n) {
 
 console.log(fizzBuzz(17));
 // fizzBuzz(17)
+
+const vh = [1,1,2,3,4]
+const vhh = [5,4,3,6,7]
+console.log([...vh, ...vhh]);
