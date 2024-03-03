@@ -1348,3 +1348,28 @@ console.log(fizzBuzz(17));
 const vh = [1,1,2,3,4]
 const vhh = [5,4,3,6,7]
 console.log([...vh, ...vhh]);
+
+
+/*
+ Given two or more arrays, write a function that combines
+ their elements into one array without any repetition. 
+ E.g mergeArrays([1,2,3,3,3], [1,4,5,2]) // should return [1,2,3,4,5]
+*/
+
+function mergeArrays(...arrays){
+  let jointArray = []
+
+  arrays.forEach(arr => {
+    jointArray = [...jointArray, ...arr]
+  })
+
+  // return [...new Set([...jointArray])]
+
+  // // Or
+
+  return Array.from(new Set([...jointArray]))
+}
+
+console.log(mergeArrays([1,2,3,4,2], [2,3,4,5,1], [2,1,1,1,3,4]));
+
+
