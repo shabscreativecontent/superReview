@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-236 387 139 20" style="enable-background:new -236 387 139 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{opacity:0.5;fill:url(#SVGID_2_);enable-background:new    ;}
+	.st3{opacity:0.15;fill:url(#SVGID_3_);enable-background:new    ;}
+	.st4{font-family:'PublicSans-Thin';}
+	.st5{font-size:20px;}
+</style>
+<g>
+	<path class="st0" d="M-236,387"/>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-457.1816" y1="774.4409" x2="-457.7285" y2="773.4409" gradientTransform="matrix(16.789 0 0 -19.704 7452.4077 15646.9766)">
+			<stop  offset="0" style="stop-color:#33D35E"/>
+			<stop  offset="1" style="stop-color:#2AB6D9"/>
+		</linearGradient>
+		<path class="st1" d="M-225.2,387l-10.8,19.7h6l10.8-19.7H-225.2z"/>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-457.1816" y1="774.4409" x2="-457.7285" y2="773.4409" gradientTransform="matrix(16.789 0 0 -19.704 7459.7759 15646.9766)">
+			<stop  offset="0" style="stop-color:#33D35E"/>
+			<stop  offset="1" style="stop-color:#2AB6D9"/>
+		</linearGradient>
+		<path class="st2" d="M-217.8,387l-10.8,19.7h6l10.8-19.7H-217.8z"/>
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-457.1807" y1="774.4409" x2="-457.7277" y2="773.4409" gradientTransform="matrix(16.788 0 0 -19.704 7466.6724 15646.9766)">
+			<stop  offset="0" style="stop-color:#33D35E"/>
+			<stop  offset="1" style="stop-color:#2AB6D9"/>
+		</linearGradient>
+		<path class="st3" d="M-210.5,387l-10.8,19.7h6l10.8-19.7H-210.5z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 -194 403.0336)" class="st4 st5">easybank</text>
+</svg>

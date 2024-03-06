@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Karla', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* font-family: 'DM Serif Display', serif; */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+header .logo {
+    width: 100px;
+    display: flex;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-size: 13px;
+    font-weight: 400;
+}
+.navbar a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+.navbar .bar-four {
+    text-decoration: none;
+    color: hsl(270, 9%, 17%);
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid hsl(270, 9%, 17%);
+    padding: 5px 15px;
+}
+
+.navbar .bar-four:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: white;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+main .ff-div {
+    background-color: hsl(256, 26%, 20%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.ff-div .f-div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.f-div .fs-div {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 150px; */
+    /* padding-right: 150px; */
+    gap: 5%;
+    overflow: hidden;
+}
+
+.fs-div .fc-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fc-div .b-line {
+    width: 25%;
+    height: 1px;
+    border-top: 1px solid hsl(273, 4%, 51%);
+    margin-bottom: 35px;
+}
+
+.fc-div h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 65px;
+    font-weight: 800;
+    width: 90%;
+    line-height: 0.9;
+    margin-bottom: 25px;
+}
+
+.fc-div p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.fc-div button {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    border-style: hidden;
+    border: 1px solid hsl(0, 0%, 98%);
+    padding: 7px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.fc-div button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+
+.fs-div .family-img {
+    background-image: url('images/image-intro-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45%;
+    height: 600px;
+    /* margin-top: 70px; */
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+main .right-pattern {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
+main .left-pattern {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 11%;
+}
+
+.sf-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+
+.sf-div .l-line {
+    width: 15%;
+    height: 1px;
+    border-top: 1px solid hsl(216, 30%, 68%);
+    margin-bottom: 50px;
+}
+
+.sf-div h2 {
+    color: hsl(270, 9%, 17%);
+    font-family: 'DM Serif Display', serif;
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 0.8;
+    margin-bottom: 60px;
+}
+
+.sf-div .ss-div {
+    color: hsl(270, 9%, 17%);
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 100%;
+    gap: 3%;
+}
+
+.ss-div .sc-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 32%;
+}
+
+.sc-div .img-icon {
+    width: 70px;
+    margin-bottom: 25px;
+}
+
+.sc-div h3 {
+    color: black;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.sc-div p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.fo-div {
+    background-color: hsl(256, 26%, 20%);
+    background-image: url('images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: right;
+    color: hsl(0, 0%, 98%);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fo-div span {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    font-weight: 800;
+    width: 34%;
+    line-height: 0.9;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.fo-div button {
+    background-color: hsla(270, 9%, 17%, 0);
+    color: hsl(0, 0%, 98%);
+    border-style: hidden;
+    border: 1px solid hsl(0, 0%, 98%);
+    font-size: 13px;
+    font-weight: 200;
+    margin-right: 50px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.fo-div button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(270, 9%, 17%);
+}
+
+footer {
+    background-color: hsl(0, 0%, 98%);
+    background-image: url('images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .footbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.footbar .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.topbar .f-logo {
+    width: 100px;
+    display: flex;
+}
+
+.topbar .media {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.media .m-div {
+    text-decoration: hidden;
+    color: hsl(273, 4%, 51%);
+    font-size: 18px;
+}
+
+.media .m-div:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+.footbar .lowerbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.lowerbar .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bar a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-size: 15px;
+    font-weight: 300;
+    /* display: flex; */
+}
+
+.bar a:hover {
+    border-bottom: 1px solid black;
+}
+
+.bar ol {
+    color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    cursor: pointer;
+}
+
+ol li {
+    font-size: 17px;
+    font-weight: 400;
+    /* width: 100%; */
+}
+
+ol li:hover {
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }

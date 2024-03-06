@@ -1,0 +1,14 @@
+body {
+    background: yellow;
+    color: red;
+}
+
+.d1 {
+    border: 1px solid black;
+    padding: 20px 30px;
+    margin: 0px auto;
+}
+
+.d1 {
+    max-width: 800px;
+}

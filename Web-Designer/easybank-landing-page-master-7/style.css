@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Public Sans', sans-serif; */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Public Sans', sans-serif;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 0px 150px; */
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+
+header .head-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+} 
+
+.head-div .logo {
+    width: 150px;
+    display: flex;
+}
+
+.head-div .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 15px; */
+}
+
+.navbar .shape:hover {
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: black;
+}
+
+.shape a {
+    background-color: white;
+    color: hsl(233, 26%, 24%);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+
+.shape a:hover {
+    background-color: white;
+    color: black;
+}
+
+.shape .l-shape {
+    width: 100%;
+    height: 2px;
+    /* margin-top: 14px; */
+}
+
+.head-div button, 
+.f-div button, 
+.b-bar button {
+    background-color: white;
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: white;
+    border-style: hidden;
+    border-radius: 50px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.head-div button:hover, 
+.f-div button:hover,
+.b-bar button:hover {
+    opacity: 0.7;
+}
+
+main {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+main .fm-div {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fm-div .f-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.f-main .color-b {
+    width: 47%;
+    height: 600px;
+}
+.f-main .img-b {
+    background-image: url(images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 65em;
+    background-position: center left;
+    width: 53%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.img-b .mockup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 48%;
+    margin-top: -50px;
+    margin-right: -120px;
+    position: absolute;
+}
+
+.fm-div .f-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    /* margin: 150px 0px; */
+    position: absolute;
+    top: 190px;
+    bottom: 150px;
+}
+
+.f-div h1 {
+    font-size: 50px;
+    font-weight: 600;
+    width: 40%;
+    /* line-height: 100%; */
+    margin-bottom: 25px;
+}
+
+.f-div p {
+    color: hsl(233, 26%, 24%);
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.4;
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+main .s-main {
+    background-color: hsla(233, 8%, 62%, 0.116);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.s-main #about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 80px 0px;
+}
+
+#about h2,
+ #blog h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 0.8;
+}
+
+#about p {
+    color: hsl(233, 26%, 24%);
+    font-size: 15px;
+    font-weight: 100;
+    width: 50%;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+#about .a-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3%;
+}
+
+.a-div .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.about .img-icon {
+    display: flex;
+    width: 65px;
+}
+
+.about span {
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 0.8;
+}
+
+.about article {
+    color: hsl(233, 26%, 24%);
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.4;
+    width: 95%;
+
+}
+
+ main .t-main {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.t-main #blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 80px 0px;
+}
+
+#blog .blog-c {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 3%;
+    margin-top: 20px;
+}
+
+.blog-c .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+}
+
+.content .blog-img1 {
+    background-image: url(images/image-currency.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.content .blog-img2 {
+    background-image: url(images/image-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.content .blog-img3 {
+    background-image: url(images/image-plane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.content .blog-img4 {
+    background-image: url(images/image-confetti.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.content .b-c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.b-c p {
+    color: hsl(233, 26%, 24%);
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.b-c a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.b-c a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.b-c article {
+    color: hsl(233, 26%, 24%);
+    font-size: 12px;
+    font-weight: 200;
+}
+
+footer {
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .footbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 10%;
+    margin: 30px 0px;
+}
+
+.footbar .l-d {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.l-d .f-logo {
+    display: flex;
+    width: 120px;
+}
+
+.l-d .media {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.media .m-div {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    /* font-weight: 200; */
+}
+
+.media .m-div:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+
+.footbar .c-bar {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    gap: 15%;
+}
+
+.c-bar .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bar a:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+.footbar .b-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    gap: 22px;
+} 
+
+.b-bar span {
+    color: ;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.attribution a {
+        color: hsl(228, 45%, 44%);
+    }

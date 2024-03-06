@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Be Vietnam Pro', sans-serif; */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navbar .logo {
+    display: flex;
+    width: 150px;
+}
+
+.navbar .nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+}
+
+.navbar button,
+.fd-div button,
+.t-div button {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border-style: hidden;
+    border-radius: 50px;
+    padding: 8px 30px;
+    box-shadow: 0px 5px 7px hsla(12, 88%, 59%, 0.527);
+}
+
+.navbar button:hover,
+.fd-div button:hover,
+.t-div button:hover {
+    opacity: 0.7;
+}
+
+header .f-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.f-div .fd-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.fd-div h1 {
+    color: hsl(228, 39%, 23%);
+    font-size: 50px;
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.fd-div p {
+    color: hsl(227, 12%, 61%);
+    font-size: 18px;
+    font-weight: 200;
+    width: 60%;
+    margin-bottom: 35px;
+}
+
+.f-div .il-img {
+    display: flex;
+    width: 45%;
+}
+
+header .background-img {
+    position: absolute;
+    right: -100px;
+    top: -180px;
+    width: 50%;
+    z-index: -1;
+}
+
+main {
+    /* color: hsl(228, 39%, 23%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main .s-div {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15%;
+    width: 80%;
+}
+
+.s-div .sf-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 40%;
+}
+
+.sf-div h2 {
+    color: hsl(228, 39%, 23%);
+    font-size: 40px;
+    font-weight: 550;
+    line-height: 1.0;
+}
+
+.sf-div p {
+    color: hsl(227, 12%, 61%);
+    font-size: 17px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.s-div .ss-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 45%;
+}
+
+.ss-div .ssf-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ssf-div span {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ssf-div .sss-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sss-div h3 {
+    color: hsl(228, 39%, 23%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sss-div p {
+    color: hsl(227, 12%, 61%);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+main .second-b-img {
+    display: flex;
+    width: 45%;
+    position: absolute;
+    bottom: 15em;
+    left: -20em;
+    z-index: -1;
+}
+
+main .t-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.t-div span {
+    color: hsl(228, 39%, 23%);
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.t-div .tf-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 95%;
+}
+
+.tf-div .ts-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ts-div .profile-img1 {
+    background-image: url(images/avatar-anisha.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+}
+
+.ts-div .profile-img2 {
+    background-image: url(images/avatar-ali.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+}
+
+.ts-div .profile-img3 {
+    background-image: url(images/avatar-richard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 0;
+}
+
+.ts-div .tt-div {
+    background-color: hsla(227, 12%, 61%, 0.075);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.tt-div h3 {
+    color: hsl(228, 39%, 23%);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tt-div p {
+    color: hsl(227, 12%, 61%);
+    font-size: 15px;
+    font-size: 200;
+    text-align: center;
+    /* margin: 0px 15px; */
+    margin-bottom: 35px;
+    width: 90%;
+}
+
+.ft-div {
+    background-color: hsl(12, 88%, 59%);
+    background-image: url(images/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right bottom;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ft-div .ftf-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ftf-div span {
+    font-size: 30px;
+    font-weight: 500;
+    width: 34%;
+}
+
+.ftf-div button {
+    
+    background-color: white;
+    color: hsl(12, 100%, 49%);
+    border-style: hidden;
+    border-radius: 50px;
+    padding: 8px 30px;
+}
+
+.ftf-div button:hover {
+    color: hsl(12, 83%, 72%);
+}
+
+footer {
+    background-color: hsl(228, 39%, 23%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .footbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10%;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footbar .foot-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.foot-one .f-logo {
+    display: flex;
+    width: 120px;
+}
+
+.foot-one .media {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.media .m-div {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.media .m-div:hover {
+    color: hsl(12, 88%, 59%);
+}
+
+.footbar .foot-two {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 30px; */
+    width: 28%;
+}
+
+.foot-two .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bar a:hover {
+    color: hsl(12, 88%, 59%);
+}
+
+.footbar .foot-three {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    margin-left: 2px;
+}
+
+.foot-three form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+form input {
+    color: hsl(227, 12%, 61%);
+    border-style: none;
+    border-radius: 50px;
+    padding: 10px 30px 10px 15px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+form button{
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border-style: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+form button:hover{
+    background-color: hsl(12, 90%, 68%);
+}
+
+.foot-three span {
+    color: hsl(227, 12%, 61%);
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Fraunces', serif; */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    /* overflow: hidden; */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+}
+
+header {
+    background-image: url('images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.navbar .logo {
+    width: 150px;
+    display: flex;
+}
+
+.navbar .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    width: 400;
+}
+
+.bar span {
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bar span:hover {
+    background-color: hsla(0, 0%, 100%, 0.253);
+    color: white;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Fraunces', serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+header .arrow {
+    width: 25px;
+    display: flex;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main .fm-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fm-div .fsm-div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.fsm-div h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.fsm-div p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.fsm-div .a-div {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.a-div .bc-div {
+    background-color: hsla(51, 100%, 49%, 0.301);
+    height: 6px;
+    width: 130px;
+    border-radius: 50px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.a-div .bc-div:hover {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.a-div a {
+    font-family: 'Fraunces', serif;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    position: absolute;
+    margin-left: 4px;
+}
+
+
+main .t-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.a-div .sbc-div {
+    background-color: hsla(7, 99%, 70%, 0.37);
+    height: 6px;
+    width: 130px;
+    border-radius: 50px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.a-div .sbc-div:hover {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.ig-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ig-div .f-div {
+    background-image: url('images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.f-div span, 
+.s-div span {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-size: bold;
+    margin-bottom: 25px;
+    width: 65%;
+    text-align: center;
+}
+
+.f-div p, 
+.s-div p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 70px;
+
+}
+
+.ig-div .s-div {
+    background-image: url('images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 100px 0px;
+}
+
+.clients h3 {
+    color: hsl(213, 9%, 39%);
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients .cs-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 3%;
+}
+
+.cs-div .each-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+}
+
+.each-c .emily-img {
+    background-image: url('images/image-emily.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.each-c .thomas-img {
+    background-image: url('images/image-thomas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.each-c .jennie-img {
+    background-image: url('images/image-jennie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.each-c .abt {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.each-c .name {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.each-c .post {
+    color: hsl(213, 9%, 39%);
+    font-size: 12px;
+    width: 400;
+}
+
+.descreption {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.descreption .descreption-img {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: hsl(168, 40%, 70%);
+    color: hsl(167, 40%, 24%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+footer .footbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footbar h3 {
+    /* font-family: 'Fraunces', serif; */
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footbar .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footbar .bar a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.footbar .bar a:hover {
+    color: white
+}
+
+.footbar .media {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.media a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 15px;
+}
+
+.media a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+ .attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+ .attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76%;
+    margin-right: 25px;
+}
+
+.contents .f-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.f-div .ff-div {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 30px;
+    width: 67%;
+    position: relative;
+}
+
+.ff-div .profile,
+.fs-div .profile,
+.sf-div .profile,
+.ss-div .profile,
+.t-div .profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.profile .p-img1 {
+    background-image: url(images/image-daniel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.profile .p-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.p-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.p-info p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.ff-div span,
+.fs-div span,
+.sf-div span,
+.ss-div span,
+.t-div span {
+    font-size: 25px;
+    font-weight: 600;
+    width: 98%;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.ff-div article,
+.fs-div article,
+.sf-div article,
+.ss-div article,
+.t-div article {
+    font-size: 18px;
+    font-weight: 200;
+    z-index: 1;
+}
+
+.ff-div .pb-img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 150px;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.f-div .fs-div {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 30px;
+    width: 27%;
+}
+
+.profile .p-img2 {
+    background-image: url(images/image-jonathan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.contents .s-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.s-div .sf-div {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 30px;
+    width: 27%;
+}
+
+.profile .p-img3 {
+    background-image: url(images/image-jeanette.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.s-div .ss-div {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 30px;
+    width: 67%;
+}
+
+.profile .p-img4 {
+    background-image: url(images/image-patrick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid hsl(263, 55%, 52%);
+}
+
+main .t-div {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    width: 19%;
+    padding: 30px;
+}
+
+.profile .p-img5 {
+    background-image: url(images/image-kira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 357px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    main .contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+
+    .contents .f-div,
+    .contents .s-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .f-div .ff-div,
+    .f-div .fs-div,
+    .s-div .sf-div,
+    .s-div .ss-div,
+    main .t-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 10px;
+        padding: 25px;
+        width: 70%;
+        position: relative;
+    }
+
+    .ff-div .profile,
+    .fs-div .profile,
+    .sf-div .profile,
+    .ss-div .profile,
+    .t-div .profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .profile .p-img1,
+    .profile .p-img2,
+    .profile .p-img3,
+    .profile .p-img4,
+    .profile .p-img5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 38px;
+        height: 38px;
+    }
+
+    .p-info h3 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .p-info p {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .ff-div span,
+    .fs-div span,
+    .sf-div span,
+    .ss-div span,
+    .t-div span {
+        font-size: 19px;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+    
+    .ff-div article,
+    .fs-div article,
+    .sf-div article,
+    .ss-div article,
+    .t-div article {
+        font-size: 13px;
+        font-weight: 200;
+        z-index: 1;
+        width: 96%;
+    }
+    
+    .ff-div .pb-img {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 100px;
+        width: 150px;
+        z-index: 0;
+        opacity: 0.2;
+    }
+
+
+}
