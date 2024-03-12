@@ -1400,6 +1400,13 @@ function falsyBouncer(array){
 
 console.log(falsyBouncer([1,0,'',null, 0,2,4]));
 
+
+
+
+// TASK: Write a function, times10, that takes an argument, n, and multiples n times 10
+// A simple multiplication fn
+const times10 = (n) => (n * 10)
+
 // TASK: Transform this simple sorting algorithm into a unique sort, meaning that it should not return any duplicate values in the sorted array.
 
 
