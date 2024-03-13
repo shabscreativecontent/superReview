@@ -1399,3 +1399,25 @@ function falsyBouncer(array){
 
 
 console.log(falsyBouncer([1,0,'',null, 0,2,4]));
+
+// TASK: Transform this simple sorting algorithm into a unique sort, meaning that it should not return any duplicate values in the sorted array.
+
+
+const uniqSort = function(arr){
+  const breadcrumbs = {}
+  // const result = [arr[0]]
+  const result = []
+
+  for (let i = 1; i < arr.length; i++){
+      // start loop at 1 as element 0 can never be a duplicate
+      if(!breadcrumbs[arr[i]]){
+          result.push(arr[i])
+          breadcrumbs[arr[i]] = true
+      }
+  }
+  return result.sort((a,b) => a - b)
+}
+
+const answer = uniqSort([4,2,2,3,2,2,2]) // => [2,3,4]
+
+console.log(answer);
