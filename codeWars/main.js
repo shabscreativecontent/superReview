@@ -1435,4 +1435,4 @@ console.log(answer);
 
 const nums = [1,2,3,4,5]
 const firstNum = nums[0]
-console.log(firstNum);
+// console.log(firstNum);
