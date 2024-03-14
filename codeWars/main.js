@@ -1428,3 +1428,11 @@ const uniqSort = function(arr){
 const answer = uniqSort([4,2,2,3,2,2,2]) // => [2,3,4]
 
 console.log(answer);
+
+// O(1) or Order(1) 
+// Constant Time
+// No matter how many inputs are located in nums there will only ever be one operation needed!
+
+const nums = [1,2,3,4,5]
+const firstNum = nums[0]
+console.log(firstNum);
