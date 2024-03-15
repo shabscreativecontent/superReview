@@ -1382,11 +1382,11 @@ function fizzBuzz(n) {
   for(let i = 1; i <= n; i++){
     // arr.push(i)
     if(i%3 === 0 && i%5 === 0){
-      arr.push("Fizz")
+      arr.push("FizzBuzz")
     } else if(i%5 === 0){
       arr.push("Buzz")
     } else if(i%3 === 0){
-      arr.push("FizzBuzz")
+      arr.push("Fizz")
     } else{
       arr.push(i)
     }
@@ -1398,3 +1398,20 @@ function fizzBuzz(n) {
 
 console.log(fizzBuzz(17));
 // fizzBuzz(17)
+
+
+// ReversingString
+
+function reverseStr(str){
+  let newStr = ''
+
+  for(let char of str){
+    console.log(`newstr: ${newStr} = char: ${char} + newStr: ${newStr}`);
+    newStr = char + newStr
+    // newStr += char
+  } 
+
+  return newStr
+}
+
+console.log(reverseStr("shedrack"));

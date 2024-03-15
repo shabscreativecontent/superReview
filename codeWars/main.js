@@ -1436,3 +1436,22 @@ console.log(answer);
 const nums = [1,2,3,4,5]
 const firstNum = nums[0]
 // console.log(firstNum);
+
+
+
+
+// ReversingString
+
+function reverseStr(str){
+  let newStr = ''
+
+  for(let char of str){
+    console.log(`newstr: ${newStr} = char: ${char} + newStr: ${newStr}`);
+    newStr = char + newStr
+    // newStr += char
+  } 
+
+  return newStr
+}
+
+console.log(reverseStr("shedrack"));
